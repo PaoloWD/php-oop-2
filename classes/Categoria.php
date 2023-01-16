@@ -29,9 +29,9 @@ class Categoria extends Prodotto{
     {
         if($this->type === "Cane"){
 
-            return "fa-solid fa-cat";
-        } else{
             return "fa-solid fa-dog";
+        } else{
+            return "fa-solid fa-cat";
         }
     }
 
