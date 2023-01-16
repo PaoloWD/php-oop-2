@@ -27,7 +27,12 @@ class Categoria extends Prodotto{
 
     public function getIcon()
     {
-        return $this->icon;
+        if($this->type === "Cane"){
+
+            return "fa-solid fa-cat";
+        } else{
+            return "fa-solid fa-dog";
+        }
     }
 
     public function setIcon($icon)

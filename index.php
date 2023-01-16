@@ -34,7 +34,7 @@ echo '</pre>';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>PET SHOP</title>
 </head>
 <body>
@@ -46,9 +46,9 @@ echo '</pre>';
             <h5 class="card-title"><?php echo $product->getName() ?></h5>
             <p class="card-text"><h6>Categoria Prodotto</h6><?php echo $product->getCategory_name() ?></p>
             <p class="card-text"><h6>Animale Prodotto</h6><?php echo $product->getType() ?></p>
-            <p class="card-text"><h6>Icona Animale</h6><?php echo $product->getIcon() ?></p>
+            <p class="card-text"><h6>Icona Animale</h6><i class="<?php echo $product->getIcon() ?>"></i></p>
             <p class="card-text"><h6>Prezzo</h6><?php echo $product->getPrice() ?></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary">Go somewhere</a> 
         </div>
         </div>
         <?php } ?>
